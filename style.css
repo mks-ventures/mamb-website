@@ -34,13 +34,10 @@ nav {
   margin-bottom: 5rem;
 }
 
-.wordmark {
-  font-family: 'Inter', sans-serif;
-  font-weight: 600;
-  font-size: 0.8rem;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--text);
+.logo {
+  height: 28px;
+  width: auto;
+  display: block;
 }
 
 /* HERO */
