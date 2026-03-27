@@ -98,6 +98,45 @@ hr {
   color: #444;
 }
 
+/* PRESS */
+
+.press {
+  margin-bottom: 5rem;
+  text-align: center;
+}
+
+.press h3 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  color: var(--muted);
+}
+
+.press-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  opacity: 0.7;
+}
+
+.press-grid img {
+  max-height: 40px;
+  max-width: 120px;
+  object-fit: contain;
+  filter: grayscale(100%);
+  transition: opacity 0.3s, filter 0.3s;
+}
+
+.press-grid img:hover {
+  opacity: 1;
+  filter: grayscale(0%);
+}
+
 /* FOOTER */
 
 footer {
