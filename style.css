@@ -53,15 +53,37 @@ nav {
 /* HERO */
 
 .hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
   margin-bottom: 5rem;
+}
+
+.hero-content {
+  flex: 1;
+  max-width: 500px;
+}
+
+.hero-graphic {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hero-graphic img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
 
 .hero h1 {
   font-family: 'Playfair Display', serif;
   font-weight: 400;
-  font-size: clamp(3rem, 8vw, 5.5rem);
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
   line-height: 1.1;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .hero h1 em {
@@ -69,7 +91,6 @@ nav {
 }
 
 .bio {
-  max-width: 600px;
   font-size: 1.05rem;
   line-height: 1.75;
   color: #333;
@@ -182,6 +203,22 @@ footer {
 }
 
 /* MOBILE */
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+  
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .hero-graphic {
+    justify-content: center;
+  }
+}
 
 @media (max-width: 640px) {
   .focus {
