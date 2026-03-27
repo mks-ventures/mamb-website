@@ -155,6 +155,11 @@ hr {
   transition: opacity 0.3s;
 }
 
+.press-grid img.lg-logo {
+  max-height: 65px;
+  transform: scale(1.3);
+}
+
 .press-grid img:hover {
   opacity: 1;
 }
