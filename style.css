@@ -152,13 +152,11 @@ hr {
   max-height: 45px;
   max-width: 100%;
   object-fit: contain;
-  filter: grayscale(100%);
-  transition: opacity 0.3s, filter 0.3s;
+  transition: opacity 0.3s;
 }
 
 .press-grid img:hover {
   opacity: 1;
-  filter: grayscale(0%);
 }
 
 /* FOOTER */
