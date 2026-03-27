@@ -116,17 +116,30 @@ hr {
 }
 
 .press-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem 2rem;
   align-items: center;
-  gap: 2.5rem;
-  opacity: 0.7;
+  justify-items: center;
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .press-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .press-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem 1rem;
+  }
 }
 
 .press-grid img {
-  max-height: 40px;
-  max-width: 120px;
+  max-height: 45px;
+  max-width: 100%;
   object-fit: contain;
   filter: grayscale(100%);
   transition: opacity 0.3s, filter 0.3s;
